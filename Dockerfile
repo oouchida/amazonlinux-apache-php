@@ -15,4 +15,4 @@ RUN chkconfig httpd on
 expose 80
 expose 443
 
-cmd ["service" "httpd" "start"]
+CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
